@@ -21,12 +21,12 @@
 
 #### 1. 구조
 
-1. DB [사용스택 : MySQL] <br>
+1. **DB [사용스택 : MySQL]** <br>
 
-  - ![MySQL ERD](https://user-images.githubusercontent.com/54968463/115487573-f2a93600-a293-11eb-99bd-42a9a6b1b7b9.PNG) <br>
+  - ![MySQL ERD](https://user-images.githubusercontent.com/54968463/115487573-f2a93600-a293-11eb-99bd-42a9a6b1b7b9.PNG) <br><br>
 
 
-2. Spring (src/main/java/heeseong/) [사용스택 : Spring Boot, Spring Batch, Maven] <br>
+2. **Spring (src/main/java/heeseong/) [사용스택 : Spring Boot, Spring Batch, Maven]** <br>
 
   - batch/ApartmentProcessor.java <br>
   : ItemReader로 읽어 온 배치 데이터를 변환하는 역할. <br>
@@ -52,10 +52,10 @@
       각 상황에서 필요한 요소들만 Dto로 정의해서 사용. <br>
     
   - repository/ApartmentRepository.java, MovingReceiptRepository.java <br>
-  : DB와 필요 정보를 교환하는 인터페이스.  <br>
+  : DB와 필요 정보를 교환하는 인터페이스.  <br><br>
   
 
-3. Vue.js [사용스택 : Vue CLI, ESLint & Prettier, Buefy] <br>
+3. **Vue.js [사용스택 : Vue CLI, ESLint & Prettier, Buefy]** <br>
 
   - 
   
