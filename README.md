@@ -5,9 +5,6 @@
 ---
 
 > **🙋🏻‍♂️ 개발자 : 권희성**
-
-<br>
-
 > **📆 소요기간 : 4일**
 
 ---
@@ -42,24 +39,20 @@
   : MVC 디자인 패턴에서 Controller 역할. <br>
     모든 View(Vue.js)의 요청을 받고 Model과 View를 제어. <br>
     
-  - service/MovingReceiptService.java <br>
-  - service/MovingReceiptServiceImpl.java <br>
+  - service/MovingReceiptService.java, MovingReceiptServiceImpl.java  <br>
   : MVC 디자인 패턴에서 Model 역할. 비즈니스 로직 처리. <br>
     
-  - entitity/Apartment.java <br>
-  - entitity/MovingReceipt.java <br>
+  - entitity/Apartment.java, MovingReceipt.java <br>
   : JPA에서 테이블에 대응하는 하나의 클래스. <br>
     (Apartment는 아파트 정보 테이블, MovingReceipt는 예약 정보 테이블) <br>
       
-  - dto/ReservationDto.java <br>
-  - dto/Confirmation.java <br>
+  - dto/ReservationDto.java, Confirmation.java <br>
   : MVC 디자인 패턴에서 Model 역할. <br>
       View, Controller, Service가 서로 정보 교환을 위한 객체. <br>
       각 상황에서 필요한 요소들만 Dto로 정의해서 사용. <br>
     
-  - repository/ApartmentRepository.java <br>
-  - repository/MovingReceiptRepository.java <br>
-  : DB와 필요 정보를 교환하는 곳.  <br>
+  - repository/ApartmentRepository.java, MovingReceiptRepository.java <br>
+  : DB와 필요 정보를 교환하는 인터페이스.  <br>
   
 
 3. Vue.js [사용스택 : Vue CLI, ESLint & Prettier, Buefy] <br>
