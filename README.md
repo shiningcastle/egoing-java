@@ -24,45 +24,45 @@
 
 #### 1. 구조
 
-1. DB [사용스택 : MySQL]
+1. DB [사용스택 : MySQL] <br>
 
-  - ![MySQL ERD](https://user-images.githubusercontent.com/54968463/115487573-f2a93600-a293-11eb-99bd-42a9a6b1b7b9.PNG)
+  - ![MySQL ERD](https://user-images.githubusercontent.com/54968463/115487573-f2a93600-a293-11eb-99bd-42a9a6b1b7b9.PNG) <br>
 
 
-2. Spring (src/main/java/heeseong/) [사용스택 : Spring Boot, Spring Batch, Maven]
+2. Spring (src/main/java/heeseong/) [사용스택 : Spring Boot, Spring Batch, Maven] <br>
 
-  - batch/ApartmentProcessor.java
-  : ItemReader로 읽어 온 배치 데이터를 변환하는 역할. 
-    읽어온 배치 데이터와 씌여질 데이터의 타입이 다를 경우에 대응.
+  - batch/ApartmentProcessor.java <br>
+  : ItemReader로 읽어 온 배치 데이터를 변환하는 역할. <br>
+    읽어온 배치 데이터와 씌여질 데이터의 타입이 다를 경우에 대응. <br>
       
-  - configuration/ApartmentBatchConfig.java
-  : Batch에 필요한 ItemReader, Job, Step, Writer 등 구현.
+  - configuration/ApartmentBatchConfig.java <br>
+  : Batch에 필요한 ItemReader, Job, Step, Writer 등 구현. <br>
     
-  - controller/MovingReceiptController.java
-  : MVC 디자인 패턴에서 Controller 역할. 
-    모든 View(Vue.js)의 요청을 받고 Model과 View를 제어.
+  - controller/MovingReceiptController.java <br>
+  : MVC 디자인 패턴에서 Controller 역할. <br>
+    모든 View(Vue.js)의 요청을 받고 Model과 View를 제어. <br>
     
-  - service/MovingReceiptService.java
-  - service/MovingReceiptServiceImpl.java
-  : MVC 디자인 패턴에서 Model 역할. 비즈니스 로직 처리.
+  - service/MovingReceiptService.java <br>
+  - service/MovingReceiptServiceImpl.java <br>
+  : MVC 디자인 패턴에서 Model 역할. 비즈니스 로직 처리. <br>
     
-  - entitity/Apartment.java
-  - entitity/MovingReceipt.java
-  : JPA에서 테이블에 대응하는 하나의 클래스.
-    (Apartment는 아파트 정보 테이블, MovingReceipt는 예약 정보 테이블)
+  - entitity/Apartment.java <br>
+  - entitity/MovingReceipt.java <br>
+  : JPA에서 테이블에 대응하는 하나의 클래스. <br>
+    (Apartment는 아파트 정보 테이블, MovingReceipt는 예약 정보 테이블) <br>
       
-  - dto/ReservationDto.java
-  - dto/Confirmation.java
-  : MVC 디자인 패턴에서 Model 역할.
-      View, Controller, Service가 서로 정보 교환을 위한 객체.
-      각 상황에서 필요한 요소들만 Dto로 정의해서 사용.
+  - dto/ReservationDto.java <br>
+  - dto/Confirmation.java <br>
+  : MVC 디자인 패턴에서 Model 역할. <br>
+      View, Controller, Service가 서로 정보 교환을 위한 객체. <br>
+      각 상황에서 필요한 요소들만 Dto로 정의해서 사용. <br>
     
-  - repository/ApartmentRepository.java
-  - repository/MovingReceiptRepository.java
-  : DB와 필요 정보를 교환하는 곳. 
+  - repository/ApartmentRepository.java <br>
+  - repository/MovingReceiptRepository.java <br>
+  : DB와 필요 정보를 교환하는 곳.  <br>
   
 
-3. Vue.js [사용스택 : Vue CLI, ESLint & Prettier, Buefy]
+3. Vue.js [사용스택 : Vue CLI, ESLint & Prettier, Buefy] <br>
 
   - 
   
