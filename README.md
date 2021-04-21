@@ -26,7 +26,7 @@
   ![MySQL ERD](https://user-images.githubusercontent.com/54968463/115487573-f2a93600-a293-11eb-99bd-42a9a6b1b7b9.PNG) <br><br>
 
 
-2. **Spring (src/main/java/heeseong/) [사용스택 : Spring Boot, Spring Batch, Maven]** <br>
+2. **Spring [사용스택 : Spring Boot, Spring Batch, Maven] (src/main/java/heeseong/)** <br>
 
   - batch/ApartmentProcessor.java <br>
   : ItemReader로 읽어 온 배치 데이터를 변환하는 역할. <br>
